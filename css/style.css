@@ -1,0 +1,102 @@
+/* --------------------- */
+/* 全体の設定 */
+/* --------------------- */
+:root {
+  /* 魔法少女ピンク */
+  --primary-color: #ff477e;
+  /* 薄いパープル */
+  --secondary-color: #7209b7;
+  /* ゴールド */
+  --accent-color: #ffb703;
+  /* 紫がかった白 */
+  --bg-color: #faf9fe;
+  /* 濃いグレー (文字用) */
+  --text-color: #2b2d42;
+  --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, 'ヒラギノ角ゴ Pro W3', 'Meiryo', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+/* header{
+    width: 160px;
+    margin: 20px;
+    border: solid 5px red;
+    padding: 10px;
+    height: 100vh;
+} */
+/* header:hover {
+    background-color: var(--accent-color);
+} */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* 背景色 */
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0 auto 0 auto; */
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.site-nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    /* なめらかな変化 */
+    transition: color 0.3s ease;
+}
+
+.site-nav a:hover {
+    color: var(--primary-color);
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+.badge {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+/* section{
+    height: 80vh;
+} */
